@@ -2,7 +2,23 @@
     font-family: NotoSans;
     src: url(../NotoSans.ttf);
   }
-.top{
+.top {
   font-family: NotoSans;
   color: #F4B5B5;
+}
+
+button {
+  background: #FCEAAB;
+  
+  border: none;
+  padding: 10px;
+  width: 150px;
+  height: 62px;
+  transition-duration: 0.4s;
+  color:  #F4B5B5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background: white;
 }
