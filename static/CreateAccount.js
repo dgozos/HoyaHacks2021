@@ -5,6 +5,7 @@ function createAccount(){
   var password = document.getElementById('password').value;
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((user) => {
+    location.href = '/complete';
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -21,14 +22,14 @@ function finishAccount(){
   var name = document.getElementById('fullName').value;
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      //Fix This later
-    } else {
       firebase.database().ref('users/'+ userName +'/userInfo').set({
           username: userName,
           name: name
         });
 
       console.log("User Has Been Added.");
+    } else {
+      console.log("No User");
     }
   });
 }
