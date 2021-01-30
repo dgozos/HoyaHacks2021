@@ -14,6 +14,8 @@
     font-size: 30px;
 }
 .homenav {
+  width: auto;
+  height: 81px;
     background-color: #F9E17E;
 }
 .homenav a{
@@ -40,7 +42,4 @@ h2 {
     color: #F4B5B5;
     font-family: NotoSans;
     font-size: 90px;
-}
-.container {
-    background-color: #E5E5E5;
 }

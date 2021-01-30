@@ -7,6 +7,12 @@
   left: 50%;
 }
 
-h1{
+.top{
   font-family: NotoSans;
+  color: #F4B5B5;
+}
+
+.button{
+
+  background-color:   #F8EDC7;
 }
