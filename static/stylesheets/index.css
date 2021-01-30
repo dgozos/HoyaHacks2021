@@ -3,12 +3,13 @@
   src: url(../NotoSans.ttf);
 }
 
-.text-right{
-text-align: right;
-font-family: NotoSans;
+.topnav{
+    text-align: right;
+    font-family: NotoSans;
+    background-color: #FCEAAB;
 }
 
-title{
+{
 
 }
 
