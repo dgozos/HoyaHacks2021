@@ -7,7 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
+@app.route('/createaccount' , methods = ['GET' , 'POST'])
+def createaccount():
+    return render_template('CreateAccount.html')
 
 #In order to run type in termial
 # python main.py
