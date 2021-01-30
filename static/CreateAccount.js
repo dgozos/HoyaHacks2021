@@ -26,8 +26,13 @@ function finishAccount(){
           username: userName,
           name: name
         });
-
+        user.updateProfile({
+          displayName: userName
+        })
       console.log("User Has Been Added.");
+      console.log(user);
+      document.getElementById('link').innerHTML = "Click here to view your profile!";
+      console.log("Click here to view your profile!");
     } else {
       console.log("No User");
     }
