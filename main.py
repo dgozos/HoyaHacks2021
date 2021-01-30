@@ -23,6 +23,11 @@ def complete():
 def profile():
     return render_template('profile.html')
 
+@app.route('/signin' , methods = ['GET' , 'POST'])
+def signin():
+    return render_template('signin.html')
+
+
 #In order to run type in termial
 # python main.py
 if __name__ == "__main__":
