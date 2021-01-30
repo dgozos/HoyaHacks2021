@@ -26,8 +26,11 @@ function finishAccount(){
           username: userName,
           name: name
         });
-
+        user.updateProfile({
+          displayName: userName
+        })
       console.log("User Has Been Added.");
+      location.href = '/myprofile';
     } else {
       console.log("No User");
     }

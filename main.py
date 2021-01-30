@@ -19,6 +19,10 @@ def createaccount():
 def complete():
     return render_template('completeaccount.html')
 
+@app.route('/myprofile' , methods = ['GET' , 'POST'])
+def profile():
+    return render_template('profile.html')
+
 #In order to run type in termial
 # python main.py
 if __name__ == "__main__":
