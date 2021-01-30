@@ -17,10 +17,18 @@ function createAccount(){
 }
 
 function finishAccount(){
-  var userName = document.getElementById('userName').value;
-  var name = document.getElementById('name').value;
-  firebase.database().ref('users/'+ userName +'/userInfo').set({
-      username: userName,
-      name: name
-    });
+  var userName = document.getElementById('username').value;
+  var name = document.getElementById('fullName').value;
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      //Fix This later
+    } else {
+      firebase.database().ref('users/'+ userName +'/userInfo').set({
+          username: userName,
+          name: name
+        });
+
+      console.log("User Has Been Added.");
+    }
+  });
 }
