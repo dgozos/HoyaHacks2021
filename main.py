@@ -28,6 +28,9 @@ def signin():
     return render_template('signin.html')
 
 
+@app.route('/sendletter' , methods = ['GET' , 'POST'])
+def sendLetter():
+    return render_template('sendLetter.html')
 #In order to run type in termial
 # python main.py
 if __name__ == "__main__":

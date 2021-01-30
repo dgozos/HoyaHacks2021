@@ -30,7 +30,9 @@ function finishAccount(){
           displayName: userName
         })
       console.log("User Has Been Added.");
-      location.href = '/myprofile';
+      console.log(user);
+      document.getElementById('link').innerHTML = "Click here to view your profile!";
+      console.log("Click here to view your profile!");
     } else {
       console.log("No User");
     }

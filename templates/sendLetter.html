@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>LettrBox</title>
-    <link rel="stylesheet"href="{{ url_for('static', filename='stylesheets/profile.css') }}">
     <link rel="stylesheet"href="{{ url_for('static', filename='stylesheets/navbar.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   </head>
@@ -34,26 +33,10 @@
         </div>
       </div>
     </div>
-    <!-- Profile -->
-    <div class="container pt-5">
-      <div class="row">
-        <h1 class = "top text-center">Welcome To Your Profile, <span id="fullName"> </span>!</h1>
-      </div>
-      <div class="row text-center pt-5">
-        <div class="col">
-          <button type="button" name="button" onclick = "location.href = '/sendletter'">Send A Letter</button>
-        </div>
-        <div class="col">
-          <button type="button" name="button">View My Letters</button>
-        </div>
-        <div class="col">
-          <button type="button" name="button">Settings</button>
-        </div>
-        <div class="col">
-          <button type="button" name="button">Sign Out</button>
-        </div>
-      </div>
+    <div class="container">
+      
     </div>
+
 
     <!-- Add These To ALL HTML -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -64,15 +47,5 @@
     <script src = "../static/firebase.js"></script>
     <script src = "../static/CreateAccount.js"></script>
     <!-- Add These To ALL HTML -->
-    <script type="text/javascript">
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-          console.log(user);
-          document.getElementById('fullName').innerHTML = user.displayName;
-        } else {
-          console.log("No User");
-        }
-      });
-    </script>
   </body>
 </html>
