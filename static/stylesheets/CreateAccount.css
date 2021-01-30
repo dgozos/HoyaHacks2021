@@ -13,51 +13,50 @@
     font-family: NotoSans;
     font-size: 30px;
 }
-.container-fluid {
+.homenav {
 
     width: auto;
     height: 81px;
     background-color: #F9E17E;
 }
-.container-fluid a{
+.homenav a{
     float: left;
     display: block;
     color: #F4B5B5;
     text-align: center;
-    padding: 5px 10px;
+    padding: 14px 16px;
     text-decoration: none;
     font-family: NotoSans;
-    font-size: 16px;
-
+    font-size: 24px;
 }
-
-/* Search bar */
-.d-flex {
+.homenav input[type=text] {
     float: right;
     padding: 6px;
+    border: none;
     margin-top: 8px;
     margin-right: 16px;
     font-family: NotoSans;
-    font-size: 16px;
+    font-size: 24px;
     color: #F4B5B5;
 }
 .navbarButtons{
     background: white;
     border-radius: 25px;
     border: 2px solid white;
-    padding: 10px;
-    width: 100px;
-    height: 30px;
+    padding: 30px;
+    width: 120px;
+    height: 62px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-form{
-    font-family: NotoSans;
-    color: #F4B5B5;
 }
 
 h2 {
     color: #F4B5B5;
     font-family: NotoSans;
     font-size: 90px;
+}
+
+
+form{
+    font-family: NotoSans;
+    color: #F4B5B5;
 }
