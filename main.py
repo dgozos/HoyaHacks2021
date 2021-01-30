@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-#hi everyone 
+
 
 #In order to run type in termial
 # python main.py
