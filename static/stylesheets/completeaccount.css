@@ -1,0 +1,12 @@
+@font-face{
+  font-family: NotoSans;
+  src: url(../NotoSans.ttf);
+}
+.input{
+  top:50%;
+  left: 50%;
+}
+
+h1{
+  font-family: NotoSans;
+}
