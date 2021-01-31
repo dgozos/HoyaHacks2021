@@ -24,15 +24,24 @@ function viewMessages(){
   var counter = 0;
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+      displayName = user.displayName;
       var notes = [];
-      var leadsRef = database.ref('/users/' +user.displayName + '/messages');
+      console.log(user.displayName);
+      var leadsRef = database.ref('/users/' +displayName+ '/messages');
       leadsRef.on('value', function(snapshot) {
           snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            var note = (childData['entry']);
+            console.log(childData);
+            var note = (childData['newNote']);
             notes.push(note);
+            console.log(note);
           });
-        document.getElementById('note').innerHTML = notes[counter];
+          if(notes.length == 0){
+              document.getElementById('note').innerHTML = "You have no letters."
+          }
+          else{
+            document.getElementById('note').innerHTML = notes[counter];
+          }
       });
     } else {
       console.log("No User");

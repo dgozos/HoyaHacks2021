@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"href="{{ url_for('static', filename='stylesheets/navbar.css') }}">
+    <link rel="stylesheet"href="{{ url_for('static', filename='stylesheets/viewMessages.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>LettrBox</title>
   </head>
@@ -14,7 +15,7 @@
           <a href="#signIn">Sign In</a>
       </div>
       <div class="titlenav pt-5">
-          <h1>Project Name</h1>
+          <h1>LettrBox</h1>
       </div>
       <div class="homenav pt-2">
         <div class="row">
@@ -34,8 +35,10 @@
       </div>
     </div>
 
-    <div class="container">
-
+    <div class="container pt-5">
+      <div id="instructions" class="paper">
+        <h1 id="note"></h1>
+      </div>
     </div>
 
 
@@ -48,5 +51,8 @@
     <script src = "../static/firebase.js"></script>
     <script src = "../static/messages.js"></script>
     <!-- Add These To ALL HTML -->
+    <script type="text/javascript">
+      viewMessages();
+    </script>
   </body>
 </html>
