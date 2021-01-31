@@ -80,6 +80,7 @@
           console.log(user);
           document.getElementById('fullName').innerHTML = user.displayName;
         } else {
+          location.href = '/signin';
           console.log("No User");
         }
       });

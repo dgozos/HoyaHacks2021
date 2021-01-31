@@ -12,7 +12,6 @@ function sendMessageToUser(){
       document.getElementById('note').value = "";
       document.getElementById('confirm').innerHTML = "Message has been sent to " + username;
       console.log("Message has been sent to user");
-      document
     } else {
       console.log("No User");
     }
