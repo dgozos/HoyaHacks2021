@@ -10,7 +10,7 @@ function sendMessageToUser(){
           newNote:note,
       });
       document.getElementById('note').value = "";
-      document.getElementById('confirm').innerHTML = "Message has been sent to " + userName;
+      document.getElementById('confirm').innerHTML = "Message has been sent to " + username;
       console.log("Message has been sent to user");
       document
     } else {

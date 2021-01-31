@@ -9,26 +9,25 @@
   </head>
   <body style="background-color: #f2f2f2;">
     <div style="background-color:  #FCEAAB;">
-
       <div class="topnav">
-          <a href="#create">Create an Account</a>
-          <a href="#signIn">Sign In</a>
+          <a href="/createaccount">Create an Account</a>
+          <a href='/signin'>Sign In</a>
       </div>
 
       <div class="titlenav pt-5">
-          <h1>Project Name</h1>
+          <h1>LettrBox</h1>
       </div>
 
           <div class="homenav pt-2">
         <div class="row">
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">Home</a>
+            <a class="btn navbarButtons" href="/" role="button">Home</a>
           </div>
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">About</a>
+            <a class="btn navbarButtons" href="/" role="button">About</a>
           </div>
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">Letters</a>
+            <a class="btn navbarButtons" href="/myprofile" role="button">Letters</a>
           </div>
           <div class="col-sm-9">
             <input type="text" placeholder="Search..">
@@ -36,7 +35,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container pt-5" style="background-color: #f2f2f2;">
       <h2>Sign In</h1>
           <p style="color: #FA0F0F;">*Required Fields</p>
@@ -55,9 +54,9 @@
                 <a href="#create">Here</a>
                 <a href="#forgotpassword">Forgot Password</a>
               </div>
-              <button type="button" class="btn btn-primary" onclick = "createAccount()">Enter</button>
+              <button type="button" class="btn btn-primary" onclick = "SignIn()">Enter</button>
           </form>
-  
+
 
 
      <!-- Add These To ALL HTML -->
@@ -67,7 +66,7 @@
      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
      <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
      <script src = "../static/firebase.js"></script>
-     <script src = "../static/CreateAccount.js"></script>
+     <script src = "../static/SignIn.js"></script>
      <!-- Add These To ALL HTML -->
   </body>
 

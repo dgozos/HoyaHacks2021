@@ -2,68 +2,65 @@
     font-family: NotoSans;
     src: url(../NotoSans.ttf);
   }
-  @font-face{
-      font-family: NotoSans;
-      src: url(../NotoSans.ttf);
-    }
-  .topnav {
-      float: right;
-      background-color: #FCEAAB;
-      font-family: NotoSans;
-  }
-  .titlenav {
-      background-color: #FCEAAB;
-      color: #F4B5B5;
-      font-family: NotoSans;
-      font-size: 30px;
-  }
-  .homenav {
 
-      width: auto;
-      height: 81px;
-      background-color: #F9E17E;
-  }
-  .homenav a{
-      float: left;
-      display: block;
-      color: #F4B5B5;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-family: NotoSans;
-      font-size: 24px;
-  }
-  .homenav input[type=text] {
-      float: right;
-      padding: 6px;
-      border: none;
-      margin-top: 8px;
-      margin-right: 16px;
-      font-family: NotoSans;
-      font-size: 24px;
-      color: #F4B5B5;
-  }
-  .navbarButtons{
-      background: white;
-      border-radius: 25px;
-      border: 2px solid white;
-      padding: 30px;
-      width: 120px;
-      height: 62px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+.topnav {
+    float: right;
+    background-color: #FCEAAB;
+    font-family: NotoSans;
+}
+.titlenav {
+    background-color: #FCEAAB;
+    color: #F4B5B5;
+    font-family: NotoSans;
+    font-size: 30px;
+}
+.homenav {
 
-  h2 {
-      color: #F4B5B5;
-      font-family: NotoSans;
-      font-size: 90px;
-  }
+    width: auto;
+    height: 81px;
+    background-color: #F9E17E;
+}
+.homenav a{
+    float: left;
+    display: block;
+    color: #F4B5B5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: NotoSans;
+    font-size: 24px;
+}
+.homenav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-family: NotoSans;
+    font-size: 24px;
+    color: #F4B5B5;
+}
+.navbarButtons{
+    background: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 30px;
+    width: 120px;
+    height: 62px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: #F4B5B5;
+    font-family: NotoSans;
+    font-size: 90px;
+}
 
 
-  form{
-      font-family: NotoSans;
-      color: #F4B5B5;
-  }
+form{
+    font-family: NotoSans;
+    color: #F4B5B5;
+}
 
 .top {
   font-family: NotoSans;

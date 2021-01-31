@@ -8,25 +8,26 @@
     <title>LettrBox</title>
   </head>
   <body>
-    <div style="background-color: #FCEAAB;" >
+    <div style="background-color:  #FCEAAB;">
       <div class="topnav">
-          <a href="#create">Create an Account</a>
-
-          <a href="#signIn">Sign In</a>
+          <a href="/createaccount">Create an Account</a>
+          <a href='/signin'>Sign In</a>
       </div>
+
       <div class="titlenav pt-5">
           <h1>LettrBox</h1>
       </div>
-      <div class="homenav pt-2">
+
+          <div class="homenav pt-2">
         <div class="row">
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">Home</a>
+            <a class="btn navbarButtons" href="/" role="button">Home</a>
           </div>
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">About</a>
+            <a class="btn navbarButtons" href="/" role="button">About</a>
           </div>
           <div class="col-sm-1">
-            <a class="btn navbarButtons" href="#" role="button">Letters</a>
+            <a class="btn navbarButtons" href="/myprofile" role="button">Letters</a>
           </div>
           <div class="col-sm-9">
             <input type="text" placeholder="Search..">
@@ -36,8 +37,18 @@
     </div>
 
     <div class="container pt-5">
-      <div id="instructions" class="paper">
-        <h1 id="note"></h1>
+      <div class="row">
+        <div class="col-sm-2">
+          <input type="button"  value="<- Previous">
+        </div>
+        <div class="col-7">
+          <div id="instructions" class="paper">
+            <h1 id="note"></h1>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <input type="button"  value="Next ->">
+        </div>
       </div>
     </div>
 
