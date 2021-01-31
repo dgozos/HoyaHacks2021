@@ -31,6 +31,10 @@ def signin():
 @app.route('/sendletter' , methods = ['GET' , 'POST'])
 def sendLetter():
     return render_template('sendLetter.html')
+
+@app.route('/viewletter' , methods = ['GET' , 'POST'])
+def viewLetter():
+    return render_template('viewLetter.html')
 #In order to run type in termial
 # python main.py
 if __name__ == "__main__":
