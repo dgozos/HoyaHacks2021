@@ -9,7 +9,19 @@
     background-color: #FCEAAB;
 }
 
-{
-
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+p {
+  float: center;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  font-family: NotoSans;
+  color: #F4B5B5;
+  margin: 300px;
+  text-align: center;
 }
 
